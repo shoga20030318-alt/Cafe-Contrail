@@ -96,6 +96,11 @@ header .logo {
     margin-right: 0;
   }
 }
+@media (max-width: 580px) {
+  header .logo {
+    margin-left: 30px;
+  }
+}
 
 /*.site-title a {
     width: 180px;
@@ -146,6 +151,7 @@ header .logo {
 @media (max-width: 580px) {
   .btn-simple {
     font-size: 0.75rem;
+    padding: 10px;
   }
 }
 .btn-simple a {
