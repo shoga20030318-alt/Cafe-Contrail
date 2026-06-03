@@ -12,6 +12,9 @@ footer {
         margin-top: 300px;
         max-width: 1150px;
     }
+    @include m.mini {
+        margin-top: 0;
+    }
 
     .inner {
         max-width: 1184px;

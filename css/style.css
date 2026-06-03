@@ -251,6 +251,7 @@ header {
 @media (max-width: 1150px) {
   .content .morning {
     width: 100%;
+    max-height: none;
   }
 }
 .content .morning .title h1 {
@@ -273,7 +274,7 @@ header {
 }
 @media (max-width: 1150px) {
   .content .morning .item-avocado {
-    /*flex-direction: column;*/
+    flex-direction: column;
     max-width: none;
   }
 }
@@ -309,6 +310,11 @@ header {
     display: flex;
     margin-right: 32px;
     margin-top: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .content .morning .item-cake {
+    flex-direction: column;
   }
 }
 .content .morning .item-cake .heading {
@@ -350,7 +356,7 @@ header {
 .content .lunch {
   margin-bottom: 96px;
   width: 100%;
-  height: 412px;
+  max-height: 412px;
   background-color: #F8FAFC;
 }
 @media (max-width: 1365px) {
@@ -360,8 +366,13 @@ header {
 }
 @media (max-width: 1150px) {
   .content .lunch {
-    margin-top: 350px;
+    /*margin-top: 350px;*/
     padding-top: 0;
+  }
+}
+@media (max-width: 580px) {
+  .content .lunch {
+    max-height: none;
   }
 }
 .content .lunch .title {
@@ -386,6 +397,12 @@ header {
 @media (max-width: 1150px) {
   .content .lunch .section {
     margin-right: 32px;
+  }
+}
+@media (max-width: 580px) {
+  .content .lunch .section {
+    flex-direction: column;
+    margin-right: 0;
   }
 }
 .content .lunch .section .text {
@@ -427,7 +444,7 @@ header {
 }
 .content .dinner {
   width: 100%;
-  height: 443px;
+  max-height: 443px;
   background-color: #F8FAFC;
 }
 @media (max-width: 1365px) {
@@ -438,6 +455,11 @@ header {
 @media (max-width: 1150px) {
   .content .dinner {
     padding-top: 0;
+  }
+}
+@media (max-width: 580px) {
+  .content .dinner {
+    max-height: none;
   }
 }
 .content .dinner .section {
@@ -455,10 +477,22 @@ header {
     width: 50%;
   }
 }
+@media (max-width: 580px) {
+  .content .dinner .section .dinner-item1 img,
+  .content .dinner .section .dinner-item2 img {
+    width: 100%;
+  }
+}
 @media (max-width: 1150px) {
   .content .dinner .section .dinner-item1,
   .content .dinner .section .dinner-item2 {
     display: flex;
+  }
+}
+@media (max-width: 580px) {
+  .content .dinner .section .dinner-item1,
+  .content .dinner .section .dinner-item2 {
+    flex-direction: column;
   }
 }
 .content .dinner .section .dinner-text {
@@ -500,6 +534,11 @@ footer {
   footer {
     margin-top: 300px;
     max-width: 1150px;
+  }
+}
+@media (max-width: 580px) {
+  footer {
+    margin-top: 0;
   }
 }
 footer .inner {

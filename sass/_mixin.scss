@@ -13,3 +13,10 @@ $sp: 1150px;
         @content;
     }
 }
+$mini: 580px;
+
+@mixin mini {
+    @media (max-width: $mini) {
+        @content;
+    }
+}
