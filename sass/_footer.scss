@@ -1,0 +1,56 @@
+@use 'variables';
+@use 'mixin' as m;
+
+
+footer {
+    max-width: 1280px;
+    height: 220px;
+    border: 1px solid;
+    background-color: #030719;
+    margin: 0 auto;
+    @include m.sp {
+        margin-top: 300px;
+        max-width: 1150px;
+    }
+
+    .inner {
+        max-width: 1184px;
+        height: 113px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 48px;
+
+
+        .container1 {
+            margin-top: 70px;
+
+            h3 {
+                color: #38BDF8;
+            }
+
+            p {
+                color: #BFC9D7;
+            }
+        }
+
+
+        .container3 {
+            .icon {
+                display: flex;
+                margin-top: 80px;
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+        text-align: center;
+        color: #BFC9D7;
+        margin-top: 40px;
+
+    }
+
+}

@@ -1,0 +1,86 @@
+@use 'mixin' as m;
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+span {
+    color: #006398;
+}
+
+body {
+    @include m.sp {
+        width: 100%;
+    }
+}
+
+main {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+
+    /*background-color: #F8FAFC;*/
+    @include m.sp {
+        flex-direction: column;
+    }
+}
+
+aside {
+    width: 30%;
+    max-width: 256px;
+    height: 1800px;
+    padding-top: 80px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include m.sp {
+        display: none;
+
+    }
+
+    #navi {
+        h2 {
+            margin-top: 40px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            li {
+                display: flex;
+                margin-bottom: 30px;
+
+                img {
+                    width: 20px;
+                }
+
+                a {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+}
