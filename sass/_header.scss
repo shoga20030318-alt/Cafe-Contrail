@@ -15,25 +15,25 @@ header {
     z-index: 10;
     margin: 0 auto;
 
-    /*@include m.sp {
-        justify-content: normal;
+    
+    .logo {
+        width: 200px;
+        margin-right: 50px;
+        margin-left: 50px;
 
-    }*/
+        @include m.sp {
+            margin-right: 0;
+        }
+    }
 }
 
-.logo {
-    width: 200px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
 
-
-.site-title a {
+/*.site-title a {
     width: 180px;
     line-height: 1px;
     display: block;
 
-}
+}*/
 
 .wrapper {
     @include m.sp {
@@ -72,7 +72,10 @@ header {
 
     @include m.sp {
         margin-right: 0;
-        margin-left: 500px;
+        margin-left: auto;
+    }
+    @include m.mini {     
+        font-size: 0.75rem;
     }
 
     a {

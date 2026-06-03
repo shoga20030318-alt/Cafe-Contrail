@@ -48,8 +48,13 @@
             margin-right: 32px;
 
             @include m.sp {
-                flex-direction: column;
+                /*flex-direction: column;*/
                 max-width: none;
+            }
+
+            @include m.mini {
+                margin-right: 0;
+                flex-direction: column;
             }
 
             img {
@@ -58,6 +63,11 @@
                 @include m.sp {
                     width: 40%;
                     height: 400px;
+                }
+
+                @include m.mini {
+                    width: 100%;
+                    border-radius: 10px;
                 }
             }
 
@@ -89,6 +99,7 @@
 
             @include m.mini {
                 flex-direction: column;
+                margin-right: 0;
             }
 
 
@@ -97,6 +108,7 @@
                 display: flex;
                 align-items: center;
                 margin: 40px;
+
                 .price {
                     margin-left: 10px;
                 }
@@ -111,12 +123,21 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 40px;
-                width: 197px;
-                height: 192px;
+                max-width: 197px;
+                max-height: 192px;
 
                 @include m.sp {
                     margin-right: 32px;
                     margin-top: 32px;
+                }
+
+                @include m.mini {
+                    max-width: 100%;
+                    max-height: none;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: auto;
+
                 }
 
             }
@@ -141,6 +162,7 @@
         width: 100%;
         max-height: 412px;
         background-color: #F8FAFC;
+        padding-top: 20px;
 
         @include m.tab {
             padding-top: 70px;
@@ -182,9 +204,11 @@
             @include m.sp {
                 margin-right: 32px;
             }
+
             @include m.mini {
                 flex-direction: column;
                 margin-right: 0;
+                border-radius: 10px;
             }
 
 
@@ -225,11 +249,18 @@
                     pointer-events: none;
                 }
 
+                @include m.mini {
+                    border-radius: 10px;
+                }
+
                 img {
                     display: block;
                     width: 448px;
                     height: 316px;
+                }
 
+                @include m.mini {
+                    border-radius: 10px;
                 }
             }
         }
@@ -239,12 +270,15 @@
         width: 100%;
         max-height: 443px;
         background-color: #F8FAFC;
+
         @include m.tab {
             padding-top: 70px;
         }
+
         @include m.sp {
             padding-top: 0;
         }
+
         @include m.mini {
             max-height: none;
         }
@@ -264,6 +298,7 @@
                     @include m.sp {
                         width: 50%;
                     }
+
                     @include m.mini {
                         width: 100%;
                     }

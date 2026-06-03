@@ -85,24 +85,24 @@ header {
   right: 0;
   z-index: 10;
   margin: 0 auto;
-  /*@include m.sp {
-      justify-content: normal;
-
-  }*/
 }
-
-.logo {
+header .logo {
   width: 200px;
   margin-right: 50px;
   margin-left: 50px;
 }
-
-.site-title a {
-  width: 180px;
-  line-height: 1px;
-  display: block;
+@media (max-width: 1150px) {
+  header .logo {
+    margin-right: 0;
+  }
 }
 
+/*.site-title a {
+    width: 180px;
+    line-height: 1px;
+    display: block;
+
+}*/
 @media (max-width: 1150px) {
   .wrapper {
     display: none;
@@ -140,7 +140,12 @@ header {
 @media (max-width: 1150px) {
   .btn-simple {
     margin-right: 0;
-    margin-left: 500px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 580px) {
+  .btn-simple {
+    font-size: 0.75rem;
   }
 }
 .btn-simple a {
@@ -274,8 +279,14 @@ header {
 }
 @media (max-width: 1150px) {
   .content .morning .item-avocado {
-    flex-direction: column;
+    /*flex-direction: column;*/
     max-width: none;
+  }
+}
+@media (max-width: 580px) {
+  .content .morning .item-avocado {
+    margin-right: 0;
+    flex-direction: column;
   }
 }
 .content .morning .item-avocado img {
@@ -285,6 +296,12 @@ header {
   .content .morning .item-avocado img {
     width: 40%;
     height: 400px;
+  }
+}
+@media (max-width: 580px) {
+  .content .morning .item-avocado img {
+    width: 100%;
+    border-radius: 10px;
   }
 }
 .content .morning .item-avocado .text {
@@ -315,6 +332,7 @@ header {
 @media (max-width: 580px) {
   .content .morning .item-cake {
     flex-direction: column;
+    margin-right: 0;
   }
 }
 .content .morning .item-cake .heading {
@@ -333,13 +351,22 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  width: 197px;
-  height: 192px;
+  max-width: 197px;
+  max-height: 192px;
 }
 @media (max-width: 1150px) {
   .content .morning .item-cake img {
     margin-right: 32px;
     margin-top: 32px;
+  }
+}
+@media (max-width: 580px) {
+  .content .morning .item-cake img {
+    max-width: 100%;
+    max-height: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
   }
 }
 .content .morning .title {
@@ -358,6 +385,7 @@ header {
   width: 100%;
   max-height: 412px;
   background-color: #F8FAFC;
+  padding-top: 20px;
 }
 @media (max-width: 1365px) {
   .content .lunch {
@@ -403,6 +431,7 @@ header {
   .content .lunch .section {
     flex-direction: column;
     margin-right: 0;
+    border-radius: 10px;
   }
 }
 .content .lunch .section .text {
@@ -437,10 +466,20 @@ header {
   opacity: 0.6;
   pointer-events: none;
 }
+@media (max-width: 580px) {
+  .content .lunch .section .item-salad {
+    border-radius: 10px;
+  }
+}
 .content .lunch .section .item-salad img {
   display: block;
   width: 448px;
   height: 316px;
+}
+@media (max-width: 580px) {
+  .content .lunch .section .item-salad {
+    border-radius: 10px;
+  }
 }
 .content .dinner {
   width: 100%;
